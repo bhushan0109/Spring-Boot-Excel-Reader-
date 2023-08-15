@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "a8a67bfd-9de4-498d-9389-be03b900ba16",
+		"name": "excel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13732948"
+	},
+	"item": [
+		{
+			"name": "withoutAsync",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Bhushan/Desktop/reader batch.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/users/withoutAsync",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"withoutAsync"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Async",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Bhushan/Desktop/reader batch.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/users/Async",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"Async"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Async/split/object",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Bhushan/Desktop/reader batch.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/users/Async/split/object",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"Async",
+						"split",
+						"object"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
