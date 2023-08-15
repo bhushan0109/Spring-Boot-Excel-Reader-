@@ -17,7 +17,7 @@ import java.util.stream.Stream;
 @Component
 public class ExcelReader {
 
-    public <T> List<T> read(InputStream inputStream, Function<Row, T> transformer) {
+	public <T> List<T> read(InputStream inputStream, Function<Row, T> transformer) {
         List<T> results = new ArrayList<>();
         try (ReadableWorkbook workbook = new ReadableWorkbook(inputStream)) {
             Sheet sheet = workbook.getFirstSheet();

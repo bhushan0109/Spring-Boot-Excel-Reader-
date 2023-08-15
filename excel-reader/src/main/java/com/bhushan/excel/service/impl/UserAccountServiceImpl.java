@@ -110,9 +110,7 @@ public class UserAccountServiceImpl implements UserAccountService {
 			for (int i = 0; i < partitions.size(); i++) {
 				System.out.println("executeBatch=" + i);
 				futures[i] = executeBatch(partitions.get(i));
-				System.out
-						.println("===================================================================================");
-			}
+		}
 			System.out.println("execute Batch done");
 			long end = System.currentTimeMillis();
 			NumberFormat formatter1 = new DecimalFormat("#0.00000");
@@ -145,7 +143,6 @@ public class UserAccountServiceImpl implements UserAccountService {
 		for (int i = 0; i < userAccounts.size(); i += total) {
 			batchUserAccounts.add(userAccounts.subList(i, Math.min(i + total, userAccounts.size())));
 		}
-
 		return batchUserAccounts;
 	}
 }
